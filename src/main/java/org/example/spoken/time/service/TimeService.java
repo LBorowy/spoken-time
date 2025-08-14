@@ -21,6 +21,6 @@ public class TimeService {
                 .filter(rule -> rule.isMatches(time))
                 .findFirst()
                 .map(rule -> rule.format(time))
-                .orElseThrow(() -> new IllegalArgumentException("No mtching rule for time: " + time));
+                .orElseThrow(() -> new IllegalArgumentException("No matching rule for time: " + time));
     }
 }
